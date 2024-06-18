@@ -1,0 +1,15 @@
+<% include ./partials/header.ejs %>
+<div class="w-full min-h-screen bg-zinc-800 px-10 py-5 text-white">
+  <h1 class="text-3xl text-center font-bold">Create New a Post.</h1>
+  <hr class="opacity-10 mt-3">
+  <div class="flex items-center justify-center min-h-screen">
+    <form action="/createpost" method="post" enctype="multipart/form-data" class="w-full max-w-md bg-zinc-300 p-6 rounded-lg shadow-md text-black">
+      <input class="block w-full font-semibold outline-none px-3 mt-3 py-2 " type="file" name="postimage">
+      <input class="block w-full font-semibold outline-none px-3 mt-3 py-2 border-2 rounded-md text-black" type="text" placeholder="Title" name="title">
+      <textarea input class="block w-full font-semibold outline-none h-60 px-3 mt-3 py-2 border-2 rounded-md text-black" type="text" placeholder="Description" name="description"></textarea>
+      <input class="block w-full font-semibold outline-none px-3 mt-3 bg-red-700 py-2 border-2 rounded-full cursor-pointer" type="submit" value="Create Pin">
+    </form>
+  </div>
+</div>
+
+<% include ./partials/footer.ejs %>
